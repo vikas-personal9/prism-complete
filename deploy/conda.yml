@@ -1,0 +1,12 @@
+name: prism-runtime
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - pandas>=2.1,<3
+      - numpy>=1.26,<3
+      - scikit-learn==1.8.0
+      - joblib>=1.5,<2
+      - azureml-inference-server-http>=1.4,<2

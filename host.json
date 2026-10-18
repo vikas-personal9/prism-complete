@@ -1,0 +1,1 @@
+{"version":"2.0","functionTimeout":"00:05:00","extensions":{"queues":{"maxDequeueCount":5,"batchSize":4},"eventHubs":{"maxEventBatchSize":10}}}

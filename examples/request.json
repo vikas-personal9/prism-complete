@@ -1,0 +1,33 @@
+{
+  "stage": "checkpoint",
+  "features": {
+    "workflow_id": "WF001",
+    "cluster_id": "CL001",
+    "start_hour": 1,
+    "start_dayofweek": 3,
+    "prior_runtime_min": 35.71666666666667,
+    "prior_3_mean_min": 34.06111111111111,
+    "prior_3_std_min": 1.9579136666170764,
+    "prior_count": 9,
+    "elapsed_min": 4.033333333333333,
+    "node_type": "Standard_D8ds_v5",
+    "compute_type": "JOB_COMPUTE",
+    "cluster_worker_count": 4,
+    "cluster_cpu_percent": 51.7,
+    "cluster_memory_percent": 58.2,
+    "cluster_active_tasks": 6,
+    "cluster_pending_tasks": 1,
+    "cluster_autoscaling_enabled": true,
+    "spark_executor_count": 4,
+    "spark_active_tasks": 8,
+    "spark_completed_tasks": 6,
+    "spark_failed_tasks": 0,
+    "spark_input_rows": 12439878,
+    "spark_output_rows": 467739,
+    "spark_input_bytes": 1368386580,
+    "spark_shuffle_read_bytes": 4105159,
+    "spark_shuffle_write_bytes": 4488307,
+    "spark_spill_disk_bytes": 0,
+    "spark_spill_memory_bytes": 0
+  }
+}

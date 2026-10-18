@@ -1,0 +1,65 @@
+{
+  "data_rows": 50,
+  "workflows": 5,
+  "train_rows": 40,
+  "test_rows": 10,
+  "train_end": "2026-09-08 09:15:00",
+  "test_start": "2026-09-09 01:07:00",
+  "warning": "Small synthetic-like history, all runs successful; no failure model or causal savings estimate.",
+  "models": {
+    "start": {
+      "target": "runtime_min",
+      "features": [
+        "workflow_id",
+        "cluster_id",
+        "start_hour",
+        "start_dayofweek",
+        "prior_runtime_min",
+        "prior_3_mean_min",
+        "prior_3_std_min",
+        "prior_count"
+      ],
+      "mae_minutes": 0.724,
+      "rmse_minutes": 0.915,
+      "baseline_mae_minutes": 1.269,
+      "holdout_samples": 10
+    },
+    "checkpoint": {
+      "target": "remaining_min",
+      "features": [
+        "workflow_id",
+        "cluster_id",
+        "start_hour",
+        "start_dayofweek",
+        "prior_runtime_min",
+        "prior_3_mean_min",
+        "prior_3_std_min",
+        "prior_count",
+        "elapsed_min",
+        "node_type",
+        "compute_type",
+        "cluster_worker_count",
+        "cluster_cpu_percent",
+        "cluster_memory_percent",
+        "cluster_active_tasks",
+        "cluster_pending_tasks",
+        "cluster_autoscaling_enabled",
+        "spark_executor_count",
+        "spark_active_tasks",
+        "spark_completed_tasks",
+        "spark_failed_tasks",
+        "spark_input_rows",
+        "spark_output_rows",
+        "spark_input_bytes",
+        "spark_shuffle_read_bytes",
+        "spark_shuffle_write_bytes",
+        "spark_spill_disk_bytes",
+        "spark_spill_memory_bytes"
+      ],
+      "mae_minutes": 0.394,
+      "rmse_minutes": 0.454,
+      "baseline_mae_minutes": 1.269,
+      "holdout_samples": 10
+    }
+  }
+}

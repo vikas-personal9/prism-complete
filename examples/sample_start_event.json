@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "stage": "start",
+  "workflow_id": "WF001",
+  "run_id": "WF001-R10",
+  "features": {
+    "workflow_id": "WF001",
+    "cluster_id": "CL001",
+    "start_hour": 1,
+    "start_dayofweek": 3,
+    "prior_runtime_min": 35.71666666666667,
+    "prior_3_mean_min": 34.06111111111111,
+    "prior_3_std_min": 1.9579136666170764,
+    "prior_count": 9
+  }
+}

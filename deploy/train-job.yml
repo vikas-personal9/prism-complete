@@ -1,0 +1,14 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+type: command
+code: ..
+command: >-
+  python -m ml.train --data-dir data --out-dir ${{outputs.model_dir}}
+environment:
+  image: mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu22.04:latest
+  conda_file: conda.yml
+compute: azureml:cpu-prism
+experiment_name: prism-runtime-training
+display_name: prism-train-chronological-split
+outputs:
+  model_dir:
+    type: uri_folder

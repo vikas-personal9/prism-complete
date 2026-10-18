@@ -1,0 +1,25 @@
+{
+  "workflow_id": "WF001",
+  "run_id": "WF001-R01",
+  "stage": "start",
+  "processed_at_utc": "2026-10-17T23:19:10.343986+00:00",
+  "prediction": {
+    "stage": "start",
+    "prediction_minutes": 31.796,
+    "target": "runtime_min",
+    "unit": "minutes"
+  },
+  "flags": [],
+  "analysis": {
+    "mode": "rules_only",
+    "summary": "Deterministic review; LLM not configured.",
+    "evidence_flags": [],
+    "recommendations": [
+      "Continue monitoring. Compare prediction with the next observed run."
+    ],
+    "limitation": "No causal sizing proof or dollar savings estimated.",
+    "approval_required": true
+  },
+  "review_status": "PENDING",
+  "execution_status": "NOT_EXECUTED"
+}
